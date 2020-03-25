@@ -33,6 +33,19 @@ h6 {
 	font-family: "Raleway", Arial, "Helvetica Neue", sans-serif; /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
+h1 {
+	font-size: 55px;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+/* Override to remove any content for the Font Awesome Icons. Because TinyMCE keeps stripping away the <i> tags for lack of content */
+.fa, .fas, .fab {
+	content: '';
+}
+
 /* Special features */
 .site-title {
 	color: #FFA500 !important;
@@ -61,6 +74,41 @@ mark,
 }
 .scrollToTop:hover {
     text-decoration:none;
+}
+
+.wz-home-cover-image {
+    background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #000;
+}
+
+.wz-home-cover-image h1 {
+	padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.wz-home-cover-image {
+	  /* The file size of this background image is 93% smaller
+		 to improve page load speed on mobile internet connections */
+	  background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop-1024x683.jpg);
+	}
+}
+
+/* Knowledge Base */
+.nav-links {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px dotted #000;
+	border-bottom: 1px dotted #000;
+}
+
+.content-area {
+	padding-left:10px;
 }
 
 /* Social menu */
@@ -127,6 +175,67 @@ ul.socialmenu li a i,
 
 ul.socialmenu li a i:hover {
 	opacity:.7;
+}
+
+/* Contact form 7 */
+.wpcf7 form {
+	position:relative
+}
+.wpcf7 form>div,
+.wpcf7 form>p {
+	margin-bottom:1.2em
+}
+.wpcf7 .wpcf7-form-control-wrap {
+	width:100%;
+	display:block
+}
+.wpcf7 input:not([type=submit]):focus,
+.wpcf7 select:focus,
+.wpcf7 textarea:focus {
+	background:#fff;
+	border-color:#eaeaea;
+	outline:0;
+	box-shadow:none
+}
+.wpcf7 input:not([type=submit]),
+.wpcf7 select,
+.wpcf7 textarea {
+	width:100%;
+	padding:.75em
+}
+.wpcf7 input[type=file] {
+	color:#666;
+	height:auto;
+	border-width:1px;
+	border-style:solid;
+	border-color:#eaeaea;
+	border-radius:2px;
+	background:#fafafa;
+	box-shadow:none;
+	box-sizing:border-box;
+	transition:all .2s linear
+}
+.wpcf7 input[type=checkbox],
+.wpcf7 input[type=radio] {
+	display:inline-block;
+	background:#e9eef2;
+	color:#555;
+	clear:none;
+	cursor:pointer;
+	line-height:0;
+	height:1.2em;
+	margin:-3px 4px 0 0;
+	outline:0;
+	padding:0;
+	border-radius:.2em;
+	text-align:center;
+	vertical-align:middle;
+	width:1.4em;
+	min-width:1.4em;
+	transition:all .2s linear
+}
+.wpcf7 .wpcf7-validation-errors {
+	border-color:red
 }
 
 /* Load Google Fonts */
