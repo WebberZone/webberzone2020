@@ -19,9 +19,10 @@ Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-la
  * The cool thing about Lato and Raleway fonts is that they look great at light (300) and
  * regular (500) font weight. So we only use bold (700) sparingly.
  */
- body {
-	font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
-    font-size: 18px; /*BS is 16px;*/
+body {
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 18px;
+	/*BS is 16px;*/
 }
 
 h1,
@@ -30,26 +31,35 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Raleway", Arial, "Helvetica Neue", sans-serif; /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: 'Raleway', Arial, 'Helvetica Neue', sans-serif;
+	/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 h1 {
 	font-size: 55px;
 }
 
-ul, ol {
-	list-style-position: inside;
+ul,
+ol {
+	list-style-position: outside;
+}
+
+ul {
+	list-style-type: circle !important;
+	margin-left: 20px;
 }
 
 /* Override to remove any content for the Font Awesome Icons. Because TinyMCE keeps stripping away the <i> tags for lack of content */
-.fa, .fas, .fab {
+.fa,
+.fas,
+.fab {
 	content: '';
 }
 
 /* Special features */
 .site-title {
-	color: #FFA500 !important;
-	font-family: 'Courgette', "Lato", "Helvetica Neue", Arial, sans-serif !important;
+	color: #ffa500 !important;
+	font-family: 'Courgette', 'Lato', 'Helvetica Neue', Arial, sans-serif !important;
 	font-size: 24pt !important;
 }
 
@@ -61,25 +71,26 @@ mark,
 }
 
 .scrollToTop {
-    padding:10px;
-    text-align:center;
-    font-weight: bold;
-    color: #444;
-    text-decoration: none;
-    position:fixed;
-    bottom:75px;
-    right:40px;
-	display:none;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position: fixed;
+	bottom: 75px;
+	right: 40px;
+	display: none;
 	z-index: 1000;
 }
+
 .scrollToTop:hover {
-    text-decoration:none;
+	text-decoration: none;
 }
 
 .wz-home-cover-image {
-    background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+	background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: #000;
@@ -91,9 +102,9 @@ mark,
 
 @media only screen and (max-width: 1000px) {
 	.wz-home-cover-image {
-	  /* The file size of this background image is 93% smaller
+		/* The file size of this background image is 93% smaller
 		 to improve page load speed on mobile internet connections */
-	  background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop-1024x683.jpg);
+		background-image: url(https://webberzone.com/wp-content/uploads/2015/06/WZ-Laptop-1024x683.jpg);
 	}
 }
 
@@ -104,35 +115,34 @@ mark,
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-top: 1px dotted #000;
-	border-bottom: 1px dotted #000;
 }
 
 .content-area {
-	padding-left:10px;
+	padding-left: 10px;
 }
 
 /* Social menu */
 ul.socialmenu {
-	overflow:auto;
+	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 580px;
 }
 
 ul.socialmenu li {
-	list-style-type:none;
-	float:left;
+	list-style-type: none;
+	float: left;
 	padding: 0 !important;
 }
 
 ul.socialmenu li a i,
 .socialmenu .fa {
-	background:#205D7A;
-	color:#fff;
-	border-radius:40px;
-	text-align:center;
-	margin-right:10px;
-	transition:all .2s ease-in-out;
+	background: #205d7a;
+	color: #fff;
+	border-radius: 40px;
+	text-align: center;
+	margin-right: 10px;
+	transition: all 0.2s ease-in-out;
 	width: 80px;
 	height: 80px;
 	padding-top: 15%;
@@ -140,102 +150,109 @@ ul.socialmenu li a i,
 
 .socialmenu .fa-facebook,
 .socialmenu .fa-facebook-square {
-	background:#3b5998;
+	background: #3b5998;
 }
 
 .socialmenu .fa-linkedin,
 .socialmenu .fa-linkedin-square {
-	background:#007bb6;
+	background: #007bb6;
 }
 
 .socialmenu .fa-twitter,
 .socialmenu .fa-twitter-square {
-	background:#00aced;
+	background: #00aced;
 }
 
 .socialmenu .fa-google-plus,
 .socialmenu .fa-google-plus-square {
-	background:#dd4b39;
+	background: #dd4b39;
 }
 
 .socialmenu .fa-wordpress,
 .socialmenu .fa-wordpress-square {
-	background:#205D7A;
+	background: #205d7a;
 }
 
 .socialmenu .fa-github,
 .socialmenu .fa-github-square {
-	background:#000;
+	background: #000;
 }
 
 .socialmenu .fa-rss,
 .socialmenu .fa-rss-square {
-	background:#FA9B39;
+	background: #fa9b39;
 }
 
 ul.socialmenu li a i:hover {
-	opacity:.7;
+	opacity: 0.7;
 }
 
 /* Contact form 7 */
 .wpcf7 form {
-	position:relative
+	position: relative;
 }
+
 .wpcf7 form>div,
 .wpcf7 form>p {
-	margin-bottom:1.2em
+	margin-bottom: 1.2em;
 }
+
 .wpcf7 .wpcf7-form-control-wrap {
-	width:100%;
-	display:block
+	width: 100%;
+	display: block;
 }
-.wpcf7 input:not([type=submit]):focus,
+
+.wpcf7 input:not([type='submit']):focus,
 .wpcf7 select:focus,
 .wpcf7 textarea:focus {
-	background:#fff;
-	border-color:#eaeaea;
-	outline:0;
-	box-shadow:none
+	background: #fff;
+	border-color: #eaeaea;
+	outline: 0;
+	box-shadow: none;
 }
-.wpcf7 input:not([type=submit]),
+
+.wpcf7 input:not([type='submit']),
 .wpcf7 select,
 .wpcf7 textarea {
-	width:100%;
-	padding:.75em
+	width: 100%;
+	padding: 0.75em;
 }
-.wpcf7 input[type=file] {
-	color:#666;
-	height:auto;
-	border-width:1px;
-	border-style:solid;
-	border-color:#eaeaea;
-	border-radius:2px;
-	background:#fafafa;
-	box-shadow:none;
-	box-sizing:border-box;
-	transition:all .2s linear
+
+.wpcf7 input[type='file'] {
+	color: #666;
+	height: auto;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #eaeaea;
+	border-radius: 2px;
+	background: #fafafa;
+	box-shadow: none;
+	box-sizing: border-box;
+	transition: all 0.2s linear;
 }
-.wpcf7 input[type=checkbox],
-.wpcf7 input[type=radio] {
-	display:inline-block;
-	background:#e9eef2;
-	color:#555;
-	clear:none;
-	cursor:pointer;
-	line-height:0;
-	height:1.2em;
-	margin:-3px 4px 0 0;
-	outline:0;
-	padding:0;
-	border-radius:.2em;
-	text-align:center;
-	vertical-align:middle;
-	width:1.4em;
-	min-width:1.4em;
-	transition:all .2s linear
+
+.wpcf7 input[type='checkbox'],
+.wpcf7 input[type='radio'] {
+	display: inline-block;
+	background: #e9eef2;
+	color: #555;
+	clear: none;
+	cursor: pointer;
+	line-height: 0;
+	height: 1.2em;
+	margin: -3px 4px 0 0;
+	outline: 0;
+	padding: 0;
+	border-radius: 0.2em;
+	text-align: center;
+	vertical-align: middle;
+	width: 1.4em;
+	min-width: 1.4em;
+	transition: all 0.2s linear;
 }
+
 .wpcf7 .wpcf7-validation-errors {
-	border-color:red
+	border-color: red;
 }
 
 /* Load Google Fonts */
@@ -243,42 +260,67 @@ ul.socialmenu li a i:hover {
 	font-family: 'Courgette';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Courgette Regular'), local('Courgette-Regular'), url('fonts/courgette.woff2') format('woff2'), url('fonts/courgette.ttf') format('truetype');
+	src: local('Courgette Regular'), local('Courgette-Regular'),
+		url('fonts/courgette.woff2') format('woff2'),
+		url('fonts/courgette.ttf') format('truetype');
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Lato Light'), local('Lato-Light'), url('fonts/lato-light.woff2') format('woff2'), url('fonts/lato-light.ttf') format('truetype');
+	src: local('Lato Light'), local('Lato-Light'),
+		url('fonts/lato-light.woff2') format('woff2'),
+		url('fonts/lato-light.ttf') format('truetype');
+	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Lato Regular'), local('Lato-Regular'), url('fonts/lato-regular.woff2') format('woff2'), url('fonts/lato-regular.ttf') format('truetype');
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('fonts/lato-regular.woff2') format('woff2'),
+		url('fonts/lato-regular.ttf') format('truetype');
+	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 700;
-	src: local('Lato Bold'), local('Lato-Bold'), url('fonts/lato-bold.woff2') format('woff2'), url('fonts/lato-bold.ttf') format('truetype');
+	src: local('Lato Bold'), local('Lato-Bold'),
+		url('fonts/lato-bold.woff2') format('woff2'),
+		url('fonts/lato-bold.ttf') format('truetype');
+	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Raleway Light'), local('Raleway-Light'), url('fonts/raleway-light.woff2') format('woff2'), url('fonts/raleway-light.ttf') format('truetype');
+	src: local('Raleway Light'), local('Raleway-Light'),
+		url('fonts/raleway-light.woff2') format('woff2'),
+		url('fonts/raleway-light.ttf') format('truetype');
+	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Raleway'), url('fonts/raleway-regular.woff2') format('woff2'), url('fonts/raleway-regular.ttf') format('truetype');
+	src: local('Raleway'), url('fonts/raleway-regular.woff2') format('woff2'),
+		url('fonts/raleway-regular.ttf') format('truetype');
+	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 700;
-	src: local('Raleway Bold'), local('Raleway-Bold'), url('fonts/raleway-bold.woff2') format('woff2'), url('fonts/raleway-bold.ttf') format('truetype');
+	src: local('Raleway Bold'), local('Raleway-Bold'),
+		url('fonts/raleway-bold.woff2') format('woff2'),
+		url('fonts/raleway-bold.ttf') format('truetype');
+	font-display: swap;
 }
